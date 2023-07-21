@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/script.js" defer></script>
+        <title>Frontend Mentor | Interactive rating component</title>
+    </head>
+    <body>
+        <main class="container wrapper flex-col">
+            <section class="card flex-col" id="card">
+                <article class="card__information flex-col">
+                    <div class="card__star-icon"></div>
+                    <h2 class="card__title">How did we do</h2>
+                    <p class="card__paragraph">
+                        Please let us know how we did with your support request.
+                        All feedback is appreciated to help us improve our offering!
+                    </p>
+                </article>
+                <form class="card__form flex-col" id="form">
+                    <fieldset class="card__buttons-container">
+                        <button class="card__button">1</button>
+                        <button class="card__button">2</button>
+                        <button class="card__button">3</button>
+                        <button class="card__button">4</button>
+                        <button class="card__button">5</button>
+                    </fieldset>
+                    <input
+                        type="submit"
+                        class="card__submit"
+                        id="submitElement"
+                        value="submit"
+                    />
+                </form>
+            </section>
+
+            <section class="card flex-col toggle-card" id="cardSuccess">
+                <article class="card__information card__information--success flex-col">
+                    <img
+                        src="./images/illustration-thank-you.svg"
+                        class="card__mobile"
+                        alt="Illustration thank you"
+                    />
+                    <p class="card__you-selected">You selected <span id="ratingUserNumber"></span> out of 5</p>
+                    <h2 class="card__title">Thank you</h2>
+                    <p class="card__paragraph">
+                        We appreciate you taking the time to give a rating.
+                        If you ever need more support, don't hesitate to get in touch!
+                    </p>
+                    <button class="card__submit" id="buttonReturnElement">Return</button>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
+
+<!--
+        How did we do? Please let us know how we did with your support request.
+        All feedback is appreciated to help us improve our offering! 1 2 3 4 5
+        Submit
+
+        You selected x out of 5 
+        Thank you! We appreciate you taking the time to give a rating.
+        If you ever need more support, don’t hesitate to get in touch!
+-->
